@@ -17,7 +17,7 @@ public class Main {
 
         while (!isCreate) {
             try {
-                System.out.println("Введите порт на котором будет принимать клиент");
+                System.out.println("Введите порт на котором будет принимать клиент (это третий коммит)");
                 port = Integer.parseInt(reader.nextLine());
                 isCreate = Client.create(port);
                 break;
