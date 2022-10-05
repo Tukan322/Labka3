@@ -35,7 +35,7 @@ public class Client {
         return isBind;
     }
 
-    public static Boolean send() {
+    public static void send() {
         Scanner reader = new Scanner(System.in);
         String msg = "";
         try {
