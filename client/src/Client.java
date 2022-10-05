@@ -28,14 +28,13 @@ public class Client {
             dc.bind(it);
             isBind = true;
         } catch (SocketException e){
-            System.out.println("Ошибка при занятии порта. Отключаюсь");
-            System.exit(1);
+            System.out.println("Ошибка при занятии порта.");
         }
         datagramChannel = dc;
         return isBind;
     }
 
-    public static void send() {
+    public static Boolean send() {
         Scanner reader = new Scanner(System.in);
         String msg = "";
         try {
