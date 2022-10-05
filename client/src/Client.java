@@ -29,6 +29,7 @@ public class Client {
             isBind = true;
         } catch (SocketException e){
             System.out.println("Ошибка при занятии порта.");
+            isBind = false;
         }
         datagramChannel = dc;
         return isBind;
